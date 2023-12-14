@@ -1,0 +1,31 @@
+# Student Name = Jacky Lin
+
+# Question 1
+#this calculator can only add and subtract. (i)
+name = input("Please enter your name.")#(ii)this allows user to input their name.
+print("Hello",name,"\nWelcome to the addition and subtraction calculator.")#(iii)this will welcome the user to the system.
+num1 = int(input("Please enter your first number."))#(iv)user can input 1sr number.
+num2 = int(input("please enter you second number."))#(iv)user can input 2nd number.
+
+print('Do you want me to (a)(A)dd or (s)(S)ubtract?')#(vi)this allows the user to use either lower or upper case letters.
+choice = input()
+    
+if choice == 'a' or choice == 'A':#(vi)this allows the user to choose either a or A to use addition
+    print (num1,"+",num2,"=",num1 + num2)#(v)this shows the whole equation.
+elif choice == 's' or choice == 'S':#(vi)this allows user to enter choose s or S to user subtraction
+    print (num1,"-",num2,"=",num1 - num2)#(v)this shows the whole equation.
+else:
+    print("Ivalid option.")#(vii)this will show up if user inputs a different option.
+
+
+
+# Student Name = Jacky
+# Question 2
+
+for i in range(20):#(i)
+squared_numbers.append(20)#(i)
+
+squared_numbers = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225, 256, 289, 324, 361, 400 ]
+print("1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225, 256, 289, 324, 361, 400")#(ii)prints the list.
+    
+squared_numbers = int(input("Which squared number will i display (1-20)?"))#(iii)allows user to select a square number.
