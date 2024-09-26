@@ -1,0 +1,68 @@
+#question 1 (a)
+# jacky
+
+print("This program can find the perimeter or area of a quadrilateral.")#(i)
+
+length = float(input("Please enter the length:"))#(iii)
+width = float(input("Please enter the width:"))#(iii)
+
+name = input("Enter your name:")#(ii)
+choice = input("Do you want to find the (p)erimeter or (a)rea?")
+if choice == "p":
+    print(2*length + 2*width(round(2)))#(iv) and #(vi)
+elif choice == "a":
+    print(length*width(round(2)))#(iv)
+print("A quadrilateral with a length of",length,"and a width of",width,"has an",choice,"of:")#(v)
+print("Thank you for using the program",name)#(ii)
+
+#question 1 (b)
+#jacky
+
+
+import random
+
+
+player_choice = input("Enter rock, paper or scissors:")#(i)
+print("The user chose:",player_choice,)#(i)
+computer_options = ["rock", "paper", "scissors"]
+
+computer_choice = computer_options [random.randint(0,2)]
+print("The computer chose:",computer_choice)#(i)
+
+if player_choice == "rock" and computer_choice == "rock":
+    print("Draw!")
+elif player_choice == "rock" and computer_choice == "paper":
+    print("Computer wins!")
+elif player_choice == "rock" and computer_choice == "scissors":
+    print("Player wins!")
+elif player_choice == "paper" and computer_choice == "paper":
+    print("Draw!")
+elif player_choice == "paper" and computer_choice == "rock":
+    print("Players wins!")
+elif player_choice == "paper" and computer_choice == "scissors":
+    print("Computer wins!")
+elif player_choice == "scissors" and computer_choice == "scissors":
+    print("Draw!")
+elif player_choice == "scissors" and computer_choice == "rock":
+    print("Computer wins!")
+elif player_choice =="scissors" and computer_choice =="paper":
+    print("Player wins!")
+
+
+#question 2
+#jacky
+
+def ticketSales(vip_tickets,regular_tickets,budget_tickets):
+    vip_tickets = int(input("How many VIP tickets are sold:"))
+    regular_tickets = int(input("How many regular tickets are sold:"))
+    budget_tickets = int(input("How many budget tickets are sold:"))
+
+vip_tickets_total = vip_tickets*150
+regular_tickets_total = regular_tickets*75
+budget_tickets_total = budget_ticket*40
+
+ticket_revenue = vip_tickets_total + regular_tickets_total + budget_tickets_total 
+
+ticketSales()
+print()
+print(ticket_revenue)
