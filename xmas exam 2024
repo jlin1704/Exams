@@ -1,0 +1,47 @@
+# Question 1
+# Name : Jacky
+from random import choice
+
+fruits = ["apple","cherry","orange"]
+
+random_fruit_1 = choice(fruits)
+random_fruit_2 = choice(fruits)#(ii)
+random_fruit_3 = choice(fruits)#(ii)
+print("Random fruit 1 :",random_fruit_1)#(i)
+print("Random fruit 2 :",random_fruit_2)#(ii)
+print("Random fruit 3 :",random_fruit_3)#(ii)
+#print("First fruit is",random_fruit_1)#(iii)
+#if random_fruit_1 == random_fruit_2:#(iv)
+    #print("First pair match.")#(iv)
+if random_fruit_1 == random_fruit_3:#(vi)
+    print("Matching pair.")#(vi)
+elif random_fruit_2 == random_fruit_3:#(vi)
+    print("Matching pair.")#(vi)
+elif random_fruit_1 == random_fruit_2:#(vi)
+    print("Matching pair.")
+    
+#first_pair = random_fruit_1 = random_fruit_2 #(v)
+#print("First pair are",first_pair)#(v)
+
+count = 0#(vii)
+#while True:#(vii)
+
+count += 101#(vii)
+    #random_fruit_1[count] and random_fruit_2[count] and random_fruit_3[count]#(vii)
+
+for fruits in range(1,100,3):
+    print(random_fruit_1,count)
+    print(random_fruit_2,count)
+    print(random_fruit_3,count)
+
+
+
+#Q2
+
+print("Split Bill calculator.")
+totalBill = int(input("Please enter the total amount of bill:"))
+splitBill = int(input("Please enter the number of people that will be splitting the bill:"))
+
+amountOwed = totalBill/splitBill
+
+print("You each owe",amountOwed)
